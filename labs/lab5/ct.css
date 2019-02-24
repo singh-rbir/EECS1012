@@ -6,7 +6,7 @@
 body {
 	text-align: center;
 	color:rgb(255, 0, 255);
-	background-color:#ff6666;
+	background-color:#ff6666; 
 }
 
 div {
@@ -34,11 +34,12 @@ input, button {
 
 button {
     color:#ffff00;
+	width: 200px;
 }
 
-strong {
+#output {
 	font-size:1.2em;
-	color:#ff3333;
+	color:#ff3333; 
 	text-decoration:bold;
 }
 
@@ -52,7 +53,7 @@ footer{
 /* Responsive layout - makes the columns stack on
    top of each other instead of next to each other */
 
-  [class*="column"] {
+  [class*="column"] { 
      width: 80%;
      display:inline-block;
      height:60vh;
@@ -63,5 +64,5 @@ footer{
   [class*="column"] {
     width:50%;
   }
-
+  
 }
