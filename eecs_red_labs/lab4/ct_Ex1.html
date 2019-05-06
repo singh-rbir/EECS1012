@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Webpage HTML document for Lab 4.
+  Author: Amirhossein Chinaei
+  For: EECS 1012, York University, Lassonde School of Engineering -->
+<html lang="En">
+<head>
+  <meta charset="UTF-8">
+  <title> EECS1012: Lab 4 - computational thinking </title>
+  <link rel="stylesheet" type="text/css" href="ct.css" title="style" />
+  <!--in Ex1 to Ex5, link your html file to your js file, here-->
+  <script src="ct_Ex1.js"></script>
+</head>
+<body>
+  <header>
+    <!-- in Ex2 to Ex5 change this header properly-->
+    <h1> sum of 2 numbers </h1>
+  </header>
+
+  <div class="column1">
+    <!--in Ex2, change the following divisions to have labels a and b
+	instead of first number and second number; change the min and
+	max to 1 and 100; also, add a new divisions and label it c, and
+	make sure its id is num3-->
+	<!--in Ex 3, change the min and max to what we had in Ex1-->
+	<!--in Ex 5, keep the first input and change its label to input,
+	remove the other two inputs-->
+    <div class="input">
+	  first number: <input id="num1" type="number" min="-32768" max="32767"/>
+	</div>
+	<div class="input">
+	  second number: <input id="num2" type="number" min="-32768" max="32767"/>
+	</div>
+	<div class="input">
+	  <!--in Ex1, define an onclick event for button; the event is
+	  handled by function add() that is defined in your js file-->
+	  <!-- in Ex2 to Ex5, you need to change the name of the
+	  event handler properly-->
+	  <button onclick="add()"> enter </button>
+	</div>
+	<strong><p id="output">	</p></strong>
+  </div>
+  <footer>(c) Author: <span>amirhossein chinaei; rajanbir singh<!--in Ex1, add your name here!--></span> </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  background-color:pink;
+}
+
+body {
+	text-align: center;
+	color:rgb(255, 0, 255);
+	background-color:#ff6666; 
+}
+
+div {
+	border:1px solid #ffff99;
+	border-radius:5px;
+    margin: 20px;
+}
+
+
+.input {
+	border:none;
+	text-align:right;
+}
+
+p {
+	text-align:right;
+	padding: 20px;}
+
+input, button {
+	font:inherit;
+	color:brown;
+	width:100px;
+	padding-left: 5px;
+}
+
+button {
+    color:#ffff00;
+	width: 200px;
+}
+
+#output {
+	font-size:1.2em;
+	color:#ff3333; 
+	text-decoration:bold;
+}
+
+footer{
+	padding-top:10px;
+	text-align:center;
+	font-size:10px;
+	color:yellow;
+}
+
+/* Responsive layout - makes the columns stack on
+   top of each other instead of next to each other */
+
+  [class*="column"] { 
+     width: 80%;
+     display:inline-block;
+     height:60vh;
+	 font-size:1.5em;
+  }
+
+@media screen and (min-width:600px) {
+  [class*="column"] {
+    width:50%;
+  }
+  
+}

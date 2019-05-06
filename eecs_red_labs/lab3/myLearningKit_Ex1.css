@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  background-color: #c5eff7;
+  overflow:auto;
+  font-family: sans-serif;
+}
+
+body {
+	text-align:center;
+}
+
+div {
+	border:1px solid grey;
+	margin-top:20px;
+}
+
+#problem {
+	/* in Ex1, add one line here to specify the width of
+	this element relative to the width of the viewport */
+  width: 90%;
+	margin:auto;
+	margin-top:20px;
+	height:80px;
+	text-align:left;
+	color:red;
+	font-family:Luminary, cursive;
+	font-size:16px;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+footer{
+	margin-top:20px;
+	text-align:center;
+	font-size:10px;
+}
+
+/* Responsive layout - makes the three columns stack
+on top of each other instead of next to each other */
+  img {
+    width: 100%;
+    height: auto;
+  	margin-top:5px;
+  	padding: 2px;
+	  /* in Ex1, add one line here such that the img
+    does not display */
+    display: none;
+  }
+
+  [class*="column"] {
+     width: 100%;
+     display:inline-block;
+     height:60vh;
+     border-radius: 15px;
+  }
+
+  header nav button{
+	  width:18%;
+	  font-size:8px;
+  }
+
+@media screen and (min-width:600px) {
+  [class*="column"] {
+    width:32%;
+  }
+
+  header nav button{
+	width:9%;
+	font-size:1.2vw;
+  }
+}
+
+/* Some personal webpage style preferences */
+nav button{
+  background-color: #81cfe0;
+  border-radius: 15px;;
+}
+
+nav button:hover{
+  background-color: #00b5cc;
+  border-color: #00b5cc;
+  font-weight: bold;
+  color: black;
+}
+
+header h1{
+  background-color: #81cfe0;
+  left: auto;
+  right: auto;
+  border-radius: 15px;
+  padding: 3px 0px 3px 0px;
+}
+
+#problem{
+  border-radius: 15px;
+  background-color: #c5eff7;
+  border: 2px solid #00b5cc;
+}
+
+[class*="column"]{
+  background-color: #81cfe0;
+  border-color: #81cfe0;
+}

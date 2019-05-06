@@ -16,12 +16,12 @@ function problem_10() {
 
   // translate rest of your flowcharts to js here:
   var counter = 0;
-  while(a != 0){
+  while(a > 0){
     var digit = a % 10;
     if(digit == 3){
       counter++;
     }
-    a = Math.floor(a/10);
+    a = parseInt(a/10);
   }
 
   outputObj.innerHTML=outputObj.innerHTML+counter;

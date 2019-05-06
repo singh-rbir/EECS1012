@@ -20,7 +20,7 @@ function problem_12() {
   while(a > 0){
     var digit = a % 10;
     rev = rev * 10 + digit;
-    a = Math.floor(a/10);
+    a = parseInt(a/10);
   }
 
   if(rev == orig){

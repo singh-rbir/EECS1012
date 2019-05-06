@@ -16,10 +16,11 @@ function problem_11() {
 
   // translate rest of your flowcharts to js here:
   var sum = 0;
-  while(a != 0){
+  while(a > 0){
     var digit = a % 10;
     sum += digit;
-    a = Math.floor(a/10);
+    a -= digit;
+    a /= 10;
   }
 
   outputObj.innerHTML=outputObj.innerHTML+sum;

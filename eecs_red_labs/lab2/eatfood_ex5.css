@@ -1,0 +1,65 @@
+body{
+  background-image: url("images/background.gif");
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content{
+  border: 6px solid white;
+  background-color: white;
+  font-family: Geneva, sans-serif;
+}
+
+header{
+  border: 4px solid white;
+  text-align: right;
+  font-family: Verdana, Geneva, sans-serif;
+  background-color: rgb(168, 213, 255);
+}
+
+.section{
+  border: 4px solid rgb(168, 213, 255);
+  background-color: rgb(196, 226, 255);
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.section p img{
+  float: right;
+}
+
+.section{
+  overflow: auto;
+  clear: right;
+}
+
+.section span{
+  border-bottom: 2px dashed black;
+}
+
+/*
+.content p{
+  border-width: thin;
+  border-style: solid;
+}
+*/
+
+footer{
+  text-align: center;
+}
+
+/* wraps all the entries (sections) into one container and makes each entry stay
+on the right side of the nav bar */
+#container{
+  overflow: auto;
+}
+
+.nav {
+  width: 150px;
+  border: 4px solid rgb(168, 213, 255);
+  background-color: rgb(196, 226, 255);
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: left;
+}

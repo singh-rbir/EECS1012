@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--EECS 1012-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title> Code Breaker </title>
+  <link rel="stylesheet" type="text/css" href="code_breaker.css" title="style" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="code_breaker.js"></script>
+</head>
+<body>
+<div id="main">
+<h2>Code Breaker</h2>
+<h3>Welcome <span id="name"></span> to the game!</h3>
+<h4>Time: <span id="timer">0s</span></h4>
+    <div id="gameboard">
+        <img src="./images/cover5.png" id="cover"/>
+		
+        <div id="coderow">
+		     <!-- these are dummy images; delete them; and,
+       			  create them in a for loop in your js code-->
+            <img src="./images/hole.png"/>
+			<img src="./images/hole.png"/>
+			<img src="./images/hole.png"/>
+			<img src="./images/hole.png"/>
+			<img src="./images/hole.png"/>
+        </div>
+		
+        <!-- there are up to 8 attempts in the game; each attempt consists 
+              of 5 holes that should be filled by marbles. 
+              Delete the following 8 attempts; and, create them with 
+              for loops in your js code; note that you need nested loops.
+              In the outer loop, you create 8 div tags, in the inner loop,
+              you create 5 img tags -->			
+        <div id="attempt8" class="attempt">		
+           <span id="attempt8pegs" class="futureattempt">
+              <img src="./images/hole.png" id="attempt8_1" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt8_2" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt8_3" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt8_4" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt8_5" class="imgAttempt"/>
+           </span>
+           <span id="attempt8result"></span>
+         </div>
+
+        <div id="attempt7" class="attempt">
+           <span id="attempt7pegs" class="futureattempt">
+              <img src="./images/hole.png" id="attempt7_1" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt7_2" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt7_3" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt7_4" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt7_5" class="imgAttempt"/>
+           </span>
+           <span id="attempt7result"></span>
+         </div>
+
+        <div id="attempt6" class="attempt">
+           <span id="attempt6pegs" class="futureattempt">
+              <img src="./images/hole.png" id="attempt6_1" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt6_2" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt6_3" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt6_4" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt6_5" class="imgAttempt"/>
+           </span>
+           <span id="attempt6result"></span>
+         </div>
+
+        <div id="attempt5" class="attempt">
+           <span id="attempt5pegs" class="futureattempt">
+              <img src="./images/hole.png" id="attempt5_1" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt5_2" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt5_3" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt5_4" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt5_5" class="imgAttempt"/>
+           </span>
+           <span id="attempt5result"></span>
+         </div>
+
+        <div id="attempt4" class="attempt">
+           <span id="attempt4pegs" class="futureattempt">
+              <img src="./images/hole.png" id="attempt4_1" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt4_2" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt4_3" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt4_4" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt4_5" class="imgAttempt"/>
+           </span>
+           <span id="attempt4result"></span>
+         </div>
+
+        <div id="attempt3" class="attempt">
+           <span id="attempt3pegs" class="futureattempt">
+              <img src="./images/hole.png" id="attempt3_1" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt3_2" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt3_3" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt3_4" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt3_5" class="imgAttempt"/>
+           </span>
+           <span id="attempt3result"></span>
+         </div>
+
+        <div id="attempt2" class="attempt">
+           <span id="attempt2pegs" class="futureattempt">
+              <img src="./images/hole.png" id="attempt2_1" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt2_2" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt2_3" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt2_4" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt2_5" class="imgAttempt"/>
+           </span>
+           <span id="attempt2result"></span>
+         </div>
+
+        <div id="attempt1" class="attempt">
+           <span id="attempt1pegs" class="futureattempt">
+              <img src="./images/hole.png" id="attempt1_1" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt1_2" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt1_3" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt1_4" class="imgAttempt"/>
+              <img src="./images/hole.png" id="attempt1_5" class="imgAttempt"/>
+           </span>
+           <span id="attempt1result"></span>
+         </div>
+		
+		<!-- also delete the following div, and create it in your js code-->
+        <div id="acceptcode">
+           <input type="button" name="Accept" value="Accept" onClick="process_attempt()"/>
+        </div>
+
+    </div>
+	
+    <div id="pegselection">
+	     <!-- delete the following 8 images; and,
+       	  create them in a for loop in your js code-->
+		<img id ="shadow1" src="./images/shadow_ball_1.png" onclick="select_peg(1)"/>
+		<img id ="shadow2" src="./images/shadow_ball_2.png" onclick="select_peg(2)"/>
+		<img id ="shadow3" src="./images/shadow_ball_3.png" onclick="select_peg(3)"/>
+		<img id ="shadow4" src="./images/shadow_ball_4.png" onclick="select_peg(4)"/>
+		<img id ="shadow5" src="./images/shadow_ball_5.png" onclick="select_peg(5)"/>
+		<img id ="shadow6" src="./images/shadow_ball_6.png" onclick="select_peg(6)"/>
+		<img id ="shadow7" src="./images/shadow_ball_7.png" onclick="select_peg(7)"/>
+		<img id ="shadow8" src="./images/shadow_ball_8.png" onclick="select_peg(8)"/>	
+    </div>
+
+</div>
+</body>
+</html>

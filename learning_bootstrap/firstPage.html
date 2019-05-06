@@ -65,16 +65,42 @@
   </br>
   <p class="text-primary">The following comes inside a container, unlike
     the above which is inside container-fluid</p>
+
   <div class="container">
     <p class="text-info">Jumbotron practice:</p>
     <div class="jumbotron">
       <h1>Bootstrap-jumbotron</h1>
     </div>
 
-    <div class="alert alert-warning alert-dismissible">
+    <div class="alert alert-warning alert-dismissible fade show">
       <button type="button" class="close" data-dismiss="alert">&times</button>
       <strong>Warning!</strong> This is a warning alert.
     </div>
+
+    <p class="text-info">Buttons practice:</p>
+    <button class="btn btn-primary">Button</button>
+    <button class="btn btn-outline-warning">Button2</button>
+  </br></br>
+    <div class="btn-group">
+        <button type="button" class="btn btn-outline-primary">Starter</button>
+        <button type="button" class="btn btn-warning">Intermediate</button>
+        <button type="button" class="btn btn-info">Pro</button>
+    </div>
+  </br>
+</br>
+    <p class="text-info">Button Dropdowns practice:</p>
+    <div class="btn-group">
+        <button type="button" class="btn btn-outline-primary">Starter</button>
+        <button type="button" class="btn btn-warning">Intermediate</button>
+        <div class="btn-group">
+          <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Pro</button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Semi pro</a>
+            <a class="dropdown-item" href="#">Full pro</a>
+          </div>
+        </div>
+    </div>
+
   </div>
 
 </body>

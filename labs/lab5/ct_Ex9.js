@@ -15,15 +15,15 @@ function problem_09() {
   outputObj.innerHTML="number: "+a+"<br><br>its digits: ";
 
   // translate rest of your flowcharts to js here:
-  while(a != 0){
+  while(a > 0){
     var digit = a % 10;
     if(a < 10){
       outputObj.innerHTML += digit;
     }else{
       outputObj.innerHTML+= digit + ", ";
     }
-
-    a = Math.floor(a/10);
+    a -= digit;
+    a /= 10;
   }
 
 
